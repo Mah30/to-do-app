@@ -7,38 +7,20 @@
 }
 
 body {
+  background: rgb(85, 138, 182);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-footer {
-  padding: 10px;
-  text-align: center;
-  color: white;
-  margin-top: auto;
+.container{
+  width: 90%;
+  height: 90vh;
+  max-width: 1100px;
+  max-height: 600px;
+  border: 1px solid black; 
+  margin: 5vh auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
 }
-
-
-/*HOW TO HIDE SIDEBAR IF NOT NEEDED? THOSE BELLOW ARE THE SIDEBAR ELEMNTS*/
-.div1 {
-  width: 25%;
-}
-
-.w3-sidebar {
-  /* display: none; works not perfectly, hides content but not the div */
-
-}
-
-.w3-bar-block {
-  /* display: none; same like above */
-}
-
-/*makes sidebar text color*/
-.w3-bar-item {
-  /* color: red; */
-}
-/*-----------------------------------------------------------------------*/
-
-
-
