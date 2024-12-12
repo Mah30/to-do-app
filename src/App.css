@@ -1,43 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  /* padding: 10px;  */
+}
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 10px;
   text-align: center;
+  color: white;
+  margin-top: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/*HOW TO HIDE SIDEBAR IF NOT NEEDED? THOSE BELLOW ARE THE SIDEBAR ELEMNTS*/
+.div1 {
+  width: 25%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w3-sidebar {
+  /* display: none; works not perfectly, hides content but not the div */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.w3-bar-block {
+  /* display: none; same like above */
 }
 
-.card {
-  padding: 2em;
+/*makes sidebar text color*/
+.w3-bar-item {
+  /* color: red; */
 }
+/*-----------------------------------------------------------------------*/
 
-.read-the-docs {
-  color: #888;
-}
+
+
