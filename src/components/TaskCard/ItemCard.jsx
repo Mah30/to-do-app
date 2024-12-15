@@ -4,7 +4,7 @@ import React from 'react';
 const ItemCard  = ({taskObj, ondelete}) => {
 
     return ( 
-        <li key = {taskObj.id}>
+        <li>
         {taskObj.completed ? "yes " : "no "}
         
         {taskObj.task}

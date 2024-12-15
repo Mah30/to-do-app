@@ -7,6 +7,7 @@ import './App.css'
 import Sidebar from './components/Sidebar/Sidebar';
 import TaskBoard from './components/TaskBoard/TaskBoard';
 import tasks from '../tasks.json'
+import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -21,7 +22,9 @@ function App() {
         <div style={{display:'flex', flexGrow:2}}>
           <Sidebar/>
 
-          <TaskBoard/>
+          <Routes>
+            <Route index element={<TaskBoard />} />
+          </Routes>
        
         </div>
         <Footer/>

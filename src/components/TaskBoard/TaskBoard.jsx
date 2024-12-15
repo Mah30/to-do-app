@@ -19,7 +19,11 @@ const TaskBoard = () => {
         <div> 
             <ul>
                 {tasks.map((taskObj, index) => (  
-                    <ItemCard taskObj={taskObj} ondelete={() => Delete(taskObj.id)} />
+                    <ItemCard
+                    key = {taskObj.id} 
+                    taskObj={taskObj} 
+                    ondelete={() => Delete(taskObj.id)} 
+                    />
                 ))}
             </ul>
         </div>
