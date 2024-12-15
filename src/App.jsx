@@ -5,6 +5,9 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
 import Sidebar from './components/Sidebar/Sidebar';
+import TaskBoard from './components/TaskBoard/TaskBoard';
+import tasks from '../tasks.json'
+
 
 
 
@@ -17,12 +20,15 @@ function App() {
         <Navbar/>
         <div style={{display:'flex', flexGrow:2}}>
           <Sidebar/>
+
+          <TaskBoard/>
+       
         </div>
         <Footer/>
       </div>
 
     
-  )
+  );
 }
 
 export default App;

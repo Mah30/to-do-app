@@ -6,16 +6,6 @@
   
   }
 
-  ul{
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-li{
-    cursor: pointer;
-}
-
 .logo{
   height: 65px;
 }
