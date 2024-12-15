@@ -1,7 +1,28 @@
 .nav {
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    /* padding: 10px;  */
+    align-items:flex-start;
+    background: rgb(65, 92, 188); /*color später veränden */
+  
   }
+
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+li{
+    cursor: pointer;
+}
+
+.logo{
+  height: 65px;
+}
+
+.appName{
+  color: rgb(152, 181, 200);
+  flex-grow: 1;
+  text-align: center;
+
+}

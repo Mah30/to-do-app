@@ -6,9 +6,11 @@ const Navbar = () => {
     return (
         
     <div className="App">
-      <div className="nav">
-        <img className="logo" src="./src/assets/img/image.png"></img>
-        <h1 className="appName">To Do App</h1>
+      <div className={styles.nav}>
+        <img className={styles.logo} src="./src/assets/img/logo2.png"></img>
+        
+        <h1 className={styles.appName}>To Do App</h1>
+
 
       </div>
     </div>
