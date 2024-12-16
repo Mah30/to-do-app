@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react'
 import styles from './TaskBoard.module.css';
 import tasksData from '../../../tasks.json'
-import ItemCard from '../TaskCard/ItemCard';
+import ItemCard from '../ItemCard/ItemCard';
 
 
 
@@ -16,7 +16,8 @@ const TaskBoard = () => {
     }
 
     return ( 
-        <div> 
+        <div>
+            <h2>My Tasks</h2> 
             <ul>
                 {tasks.map((taskObj, index) => (  
                     <ItemCard
