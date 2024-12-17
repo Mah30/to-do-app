@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './Sidebar.module.css';
+import {Link} from 'react-router-dom';
+
 
 const Sidebar = () => {
     return (
  
-        <div style ={{background: "#008ad6"}}>
-            <h3 className="w3-bar-item">Menu</h3>
+        <div className= "sidebar" style ={{background: "#008ad6"}}>
+            <h3 className="w3-bar-item">Tasks</h3>
 
-            <ul className="sidebar-menu">
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
+        
+            <ul >
+                <li><Link to = "/home">Add tasks</Link></li>
+                <li><Link to = "/about">About</Link></li>
             </ul>
 
         </div>

@@ -8,8 +8,9 @@ import './App.css'
 import Sidebar from './components/Sidebar/Sidebar';
 import TaskBoard from './components/TaskBoard/TaskBoard';
 import tasks from '../tasks.json';
-/* import AboutPage from './pages/AboutPage'; */
-/* import NotfoundPage from './pages/NotFoundPage'; */
+import ItemDetails from './pages/ItemDetails';
+import AboutPage from './pages/AboutPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 
@@ -29,18 +30,11 @@ function App() {
 
           <Routes> 
             <Route path = "/" element = {<TaskBoard/>} />
-            {/* <Route path = "/" element = {<AboutPage/>} /> */}
-            {/*  <Route path = "/" element = {<TaskBoard/>} /> */}
+            <Route path = "/item/:id" element = {<ItemDetails/>} />
+            <Route path = "/about" element = {<AboutPage/>} /> 
+            <Route path = "*" element = {<NotFoundPage/>}/>
           </Routes>
-
-         
-
-
-         
-           
-      
-
-
+  
        
         </div>
 

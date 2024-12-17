@@ -4,18 +4,20 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <>
-       
 
-        <footer style = {{textAlign: 'center'}}>
-        <p>Find this source on {""}
-            <a href="https://github.com/Mah30/to-do-app" target='_blank' style={{}}>
+            <footer className = {styles.footer}>
+
+             
+
+                <p>Desenvolvido por Mariah.       Find this source on {""}
+                    <a href="https://github.com/Mah30/to-do-app" target='_blank' style={{}}>
+                    
+                        GitHub! 
+
+                    </a>
+                </p>    
             
-                 GitHub! 
-
-            </a>
-        </p>    
-        
-        </footer>
+            </footer>
         </>
 
     );

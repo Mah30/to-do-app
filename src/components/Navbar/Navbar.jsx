@@ -5,7 +5,6 @@ import styles from './Navbar.module.css';
 const Navbar = () => {
     return (
         
-    <div className="App">
       <div className={styles.nav}>
         <img className={styles.logo} src="./src/assets/img/logo2.png"></img>
         
@@ -13,7 +12,7 @@ const Navbar = () => {
 
 
       </div>
-    </div>
+    
 
 
     );
