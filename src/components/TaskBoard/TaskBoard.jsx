@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react'
 import styles from './TaskBoard.module.css';
 import tasksData from '../../../tasks.json'
-import ItemCard from '../ItemCard/ItemCard';
+import ItemCard from '../ListItem/ListItem';
 
 
 
@@ -13,6 +13,8 @@ const TaskBoard = () => {
         const updatedTasks = tasks.filter((taskObj) => 
         taskObj.id !== id);
         setTasks(updatedTasks);
+
+
     }
 
     return ( 

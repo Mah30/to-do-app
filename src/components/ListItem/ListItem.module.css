@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 1px;
+}
+
+.deleteButton{
+    background: rgba(4, 29, 157, 0.742);
+    color:azure
+}
