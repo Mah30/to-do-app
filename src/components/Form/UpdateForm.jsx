@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 
-const TaskForm = ({onCreate}) => {
-    const [value, setValue] = useState("");
+const TaskUpdateForm = ({task, onUpdate}) => {
+    const [value, setValue] = useState(task);
     return ( 
        
         <form onSubmit={(event) => {
-            onCreate(value);
+            onUpdate(value);
             event.preventDefault();
             return false;
         }}>
-            Please, enter new task:
+            Please, enter the updated task:
             <input value={value} onChange={(event) => setValue(event.target.value)} />
-            <button type="submit">Create</button>
+            <button type="submit">Update</button>
         </form>
 
 
      );
 }
  
-export default TaskForm;
+export default TaskUpdateForm;

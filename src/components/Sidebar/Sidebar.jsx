@@ -11,7 +11,7 @@ const Sidebar = () => {
 
         
             <ul >
-                <li><Link to = "/home">Add tasks</Link></li>
+                <li><Link to = "/">Add tasks</Link></li>
                 <li><Link to = "/about">About</Link></li>
             </ul>
 

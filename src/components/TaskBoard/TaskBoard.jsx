@@ -3,11 +3,11 @@ import { useState } from 'react'
 import styles from './TaskBoard.module.css';
 import tasksData from '../../../tasks.json'
 import ItemCard from '../ListItem/ListItem';
+import TaskForm from '../Form/Form';
 
 
 
-const TaskBoard = () => {
-    const [tasks, setTasks] = useState(tasksData);
+const TaskBoard = ({tasks, setTasks}) => {
 
     const Delete = (id) => {
         const updatedTasks = tasks.filter((taskObj) => 
@@ -15,6 +15,15 @@ const TaskBoard = () => {
         setTasks(updatedTasks);
 
 
+    }
+
+    const createTask = (task) => {
+        const id = tasks.length === 0 ? 0 : (tasks[tasks.length-1].id + 1);
+        const updatedTasks = tasks.slice();
+        updatedTasks.push(
+            {id: id, task: task, completed: false},
+        )
+        setTasks(updatedTasks);
     }
 
     return ( 
@@ -29,6 +38,9 @@ const TaskBoard = () => {
                     />
                 ))}
             </ul>
+
+            <h2>New Task</h2>
+            <TaskForm onCreate={createTask} ></TaskForm>
         </div>
 
      ); 

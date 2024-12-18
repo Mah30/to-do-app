@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ListItem.module.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,7 +12,7 @@ const ListItem  = ({taskObj, ondelete}) => {
 
         {taskObj.completed ? "yes " : "no "}
         
-        {taskObj.task}
+        <Link to={"/item/" + taskObj.id}>{taskObj.task}</Link>
 
         <button className= {styles.deleteButton} type='button' onClick={ondelete}>Delete</button>
         </li>
