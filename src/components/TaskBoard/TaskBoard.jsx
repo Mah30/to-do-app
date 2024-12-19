@@ -17,15 +17,6 @@ const TaskBoard = ({tasks, setTasks}) => {
 
     }
 
-    const createTask = (task) => {
-        const id = tasks.length === 0 ? 0 : (tasks[tasks.length-1].id + 1);
-        const updatedTasks = tasks.slice();
-        updatedTasks.push(
-            {id: id, task: task, completed: false},
-        )
-        setTasks(updatedTasks);
-    }
-
     return ( 
         <div>
             <h2>My Tasks</h2> 
@@ -38,9 +29,6 @@ const TaskBoard = ({tasks, setTasks}) => {
                     />
                 ))}
             </ul>
-
-            <h2>New Task</h2>
-            <TaskForm onCreate={createTask} ></TaskForm>
         </div>
 
      ); 

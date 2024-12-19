@@ -6,12 +6,21 @@ import {Link} from 'react-router-dom';
 const Sidebar = () => {
     return (
  
-        <div className= "sidebar" style ={{background: "#008ad6"}}>
-            <h3 className="w3-bar-item">Tasks</h3>
+        <div style ={{
+            background: "#5fa8d3",
+            width:"160px",
+            padding:"20px",
+            flexShrink:"0",
+        
+         
+            }}>
+            
+            <h3>Tasks</h3>
 
         
             <ul >
-                <li><Link to = "/">Add tasks</Link></li>
+                <li><Link to = "/">Show tasks</Link></li>
+                <li><Link to = "/dashboard">Add tasks</Link></li>
                 <li><Link to = "/about">About</Link></li>
             </ul>
 

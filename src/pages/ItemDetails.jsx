@@ -20,7 +20,14 @@ const ItemDetails = ({tasks, setTasks}) => {
         <div>
             <h2>Tasks Details</h2>
             <p>Details of an item selected from {id}</p>
-            <p>{taskObj.task} ({taskObj.completed ? "yes" : "no"}) </p>
+            <p>
+                {taskObj.completed ? 
+                    <i className="fa-solid fa-check" style={{color: "#008b00", padding: "3px"}}></i>
+                    : 
+                    <i className="fa-solid fa-xmark" style={{color: "#8b0000", padding: "3px"}}></i>
+                }
+                    {taskObj.task}
+            </p>
 
             <h2>Update task</h2>
             <TaskUpdateForm task={taskObj.task} onUpdate={onUpdate} ></TaskUpdateForm>

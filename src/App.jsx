@@ -33,7 +33,7 @@ function App() {
             <Route path = "/" element = {<TaskBoard tasks={tasks} setTasks={setTasks} />} />
             <Route path = "/item/:id" element = {<ItemDetails tasks={tasks} setTasks={setTasks} />} />
             <Route path = "/about" element = {<AboutPage/>} />
-            <Route path = "/" element = {<Dashboard/>} />
+            <Route path = "/dashboard" element = {<Dashboard tasks={tasks} setTasks={setTasks} />} />
             <Route path = "*" element = {<NotFoundPage/>}/>
           </Routes>
        

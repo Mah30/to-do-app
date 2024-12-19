@@ -10,7 +10,11 @@ const ListItem  = ({taskObj, ondelete}) => {
     return ( 
         <li className= {styles.list}>
 
-        {taskObj.completed ? "yes " : "no "}
+        {taskObj.completed ? 
+        <i className="fa-solid fa-check" style={{color: "#008b00", padding: "3px"}}></i>
+        : 
+        <i className="fa-solid fa-xmark" style={{color: "#8b0000", padding: "3px"}}></i>
+        }
         
         <Link to={"/item/" + taskObj.id}>{taskObj.task}</Link>
 
